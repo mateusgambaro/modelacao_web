@@ -9,8 +9,10 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          50: '#30AF5B',
-          90: '#292C27',
+          50: '#256D4A',
+          90: '#859580',
+          120: '#003430',
+          150: '#97D384'
         },
         gray: {
           10: '#EEEEEE',
@@ -34,7 +36,10 @@ module.exports = {
         'bg-img-2': "url('/img-2.png')",
         'feature-bg': "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
-        'pattern-2': "url('/pattern-bg.png')",
+        'pattern-2': "url('/modelacao-fundo.JPG')",
+        'pattern-3': "url('/producao.jpg')",
+        'pattern-4': "url('/engenharia.jpg')",
+        
       },
       screens: {
         xs: '400px',

@@ -3,4 +3,10 @@ const nextConfig = {
   output: 'export'
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  // images: {
+  //   loader: 'akamai',
+  //   path: '',
+  // },
+}
