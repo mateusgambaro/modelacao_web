@@ -213,7 +213,7 @@ const Products: React.FC = () => {
     },
   ];
   return (
-    <section className="bg-green-90 text-center pt-6">
+    <section className="bg-green-90 text-center py-32">
       <h1 className="bold-52 sm:bold-88 text-white text-center">Produtos</h1>
       <p className="regular-16 text-white text-center mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

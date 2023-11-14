@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CarouselImagesComponent from "./CarouselImages";
+import { useState } from "react";
 
 interface CampProps {
   backgroundImage: string;
@@ -11,50 +12,73 @@ interface CampProps {
 const data = [
   {
     id: 1,
-    image: "/planta1.jpg",
+    title: "Usinagem CNC 5 Eixos",
+    image: "/molde.jpeg",
   },
   {
     id: 2,
-    image: "/planta2.jpg",
+    title: "Fundição de Alumínio",
+    image: "/molde.jpeg",
+  },
+  {
+    id: 3,
+    title: "Digitalização / Engenharia Reversa",
+    image: "/molde.jpeg",
   },
   {
     id: 4,
-    image: "/planta4.jpg",
+    title: "Usinagem CNC High Speed",
+    image: "/molde.jpeg",
+  },
+  {
+    id: 5,
+    title: "Protótipos Funcionais",
+    image: "/molde.jpeg",
+  },
+  {
+    id: 6,
+    title: "Desenvolvimento de Projetos",
+    image: "/molde.jpeg",
   },
 ];
 
-const CampSite = ({
-  backgroundImage,
-  title,
-  subtitle,
-  peopleJoined,
-}: CampProps) => {
-  return (
-    <div className={`h-full w-full overflow-x-hidden sm:ml-8 sm:mr-8 sm:rounded-2xl`}>
-      <CarouselImagesComponent data={data} />
-    </div>
-  );
-};
 
 const Camp = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleSlideChange = (index: number) => {
+    setCurrentSlide(index);
+  };
   return (
-    <section className="2xl:max-container relative sm:mt-48 bg-green-120 flex flex-col py-10 lg:pb-28">
-      <div className="hide-scrollbar flex h-full w-full items-start justify-start gap-8 overflow-x-auto ">
-        <CampSite
-          backgroundImage="/video-modelacao.mp4"
-          title="Putuk Truno Camp"
-          subtitle="Prigen, Pasuruan"
-          peopleJoined="50+ Joined"
-        />
+    <section className="2xl:max-container relative sm:flex-row bg-green-120 flex flex-col py-32 lg:pb-28">
+      <div className="hide-scrollbar flex h-full w-full ml-10 items-start justify-start gap-8 overflow-x-auto ">
+        <div
+          className={`h-[600px] w-[500px] overflow-x-hidden overflow-y-hidden sm:ml-8 sm:mr-8 sm:rounded-2xl`}
+        >
+          <CarouselImagesComponent
+            data={data}
+            onSlideChange={handleSlideChange}
+          />
+        </div>
       </div>
 
-      <div className="flexCenter absolute z-10 top-0 left-0 mt-10 px-6 lg:mt-10 w-full">
-        <div className="bg-green-50 p-8 lg:max-w-[1300px] xl:max-w-[504px]xl:px-16 relative w-full overflow-hidden sm:rounded-l-3xl rounded-3xl">
-          <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white text-center">
+      <div className="flexCenter z-10 top-24 left-0 mt-10 px-6 lg:mt-10 w-full">
+        <div className="bg-green-50 p-8 lg:max-w-[1300px] xl:w-[784px] relative w-full overflow-hidden sm:rounded-l-3xl rounded-3xl">
+          <h2 className="regular-24 md:regular-64 capitalize text-white text-center">
             <strong>Soluções Completas</strong>
           </h2>
-          <div className="flex flex-wrap sm:flex-nowrap sm:gap-10">
-            <p className="regular-14 xl:regular-18 text-center font-bold mt-5 text-white">
+          <div className="flex flex-wrap mt-4 flex-col sm:gap-4">
+            {data.map((item, index) => (
+              <p
+                key={item.id}
+                className={` text-start mt-5 text-white pl-10 ${
+                  currentSlide === index ? "bold-32" : "regular-20"
+                }`}
+              >
+                {item.title}
+              </p>
+            ))}
+            {/* <p className="regular-14 xl:regular-18 text-center font-bold mt-5 text-white">
               Usinagem CNC 5 Eixos
             </p>
             <p className="regular-14 xl:regular-18 text-center font-bold mt-5 text-white">
@@ -71,7 +95,7 @@ const Camp = () => {
             </p>{" "}
             <p className="regular-14 xl:regular-18 text-center font-bold mt-5 text-white">
               Desenvolvimento de Projetos{" "}
-            </p>
+            </p> */}
           </div>
 
           <Image

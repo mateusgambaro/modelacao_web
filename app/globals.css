@@ -18,6 +18,7 @@ body {
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50
   }
+
   .btn_white_text  { 
     @apply  border-white bg-white px-8 py-3 text-gray-90
   }
@@ -162,6 +163,13 @@ body {
   color: theme('colors.green.150'); /* Exemplo para verde do Tailwind */
 }
 
+.text-shadow {
+  text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.text-shadow-black {
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.3);
+}
 /* Sobrescrevendo a cor da seta 'prev' */
 .swiper-button-prev::after {
   /* Use a cor desejada da paleta do Tailwind aqui */
@@ -182,6 +190,19 @@ body {
 
 .mt-100 {
   margin-top: 25rem;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 2%;
+  margin-top: 1%;
+  border-radius: 10px;
+  display: flex;
+  background-color: rgb(229, 229, 229);
+  width: 96%;
+  z-index: 100;
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {

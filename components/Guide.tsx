@@ -90,38 +90,32 @@ const Guide = () => {
   ];
   return (
     <section className="flexCenter flex-col bg-green-120">
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", ease: "easeOut", duration: 0.5 }}
-      >
-        <div className="relative z-20 flex flex-1 flex-col p-10">
-          <h1 className="bold-52 lg:bold-68">Desde 1975</h1>
-          <h2 className="bold-52 lg:bold-68">100% Brasileira</h2>
-          <p className="regular-16 mt-6 text-gray-10 xl:max-w-[1200px]">
-            A Modelação Sorocabana iniciou suas atividades em 1975 e orgulha-se
-            em ser uma empresa 100% brasileira, altamente especializada, moderna
-            e pronta para enfrentar os desafios.Localizada em Sorocaba/SP, em
-            uma área total de 6000m2, conta com modernas instalações e um parque
-            industrial que concentra recursos tecnológicos de ultima geração,
-            preparado para atender as necessidades de um mercado cada vez mais
-            exigente e competitivo. Com mais de três décadas de historia,
-            tornou-se uma empresa líder em seu mercado, sempre preocupada em
-            oferecer aos seus clientes um alto padrão de qualidade e
-            atendimento. Temos know-how para desenvolvimento de projetos e
-            moldes ferramentais conforme desenhos ou amostras e também prestamos
-            serviços de manutenção em moldes em geral, nos enquadrando nas
-            políticas de terceirização/parceria, tanto na manutenção como no
-            desenvolvimento de moldes e modelos. Tradicional fornecedor para
-            indústria auto peças; máquinas operatrizes; ferramentas
-            eletroeletrônicas; têxtil entre outros, oferecemos aos nossos
-            clientes os melhores serviços, com qualidade, atendimento e rapidez
-            no prazo de entrega. Com sede própria e contando com equipamentos de
-            alta tecnologia, podemos executar todos e quaisquer tipos de modelos
-            e moldes. Desenvolvemos todo o processo por aplicativos CAD/CAM.
-          </p>
-        </div>
-      </motion.div>
+      <div className="relative z-20 flex flex-1 flex-col p-10">
+        <h1 className="bold-52 lg:bold-68 drop-shadow-2xl text-shadow-black">Desde 1975</h1>
+        <h2 className="bold-52 lg:bold-68 text-shadow-black" >100% Brasileira</h2>
+        <p className="regular-16 mt-6 text-gray-10 xl:max-w-[1200px] text-shadow-black">
+          A Modelação Sorocabana iniciou suas atividades em 1975 e orgulha-se em
+          ser uma empresa 100% brasileira, altamente especializada, moderna e
+          pronta para enfrentar os desafios.Localizada em Sorocaba/SP, em uma
+          área total de 6000m2, conta com modernas instalações e um parque
+          industrial que concentra recursos tecnológicos de ultima geração,
+          preparado para atender as necessidades de um mercado cada vez mais
+          exigente e competitivo. Com mais de três décadas de historia,
+          tornou-se uma empresa líder em seu mercado, sempre preocupada em
+          oferecer aos seus clientes um alto padrão de qualidade e atendimento.
+          Temos know-how para desenvolvimento de projetos e moldes ferramentais
+          conforme desenhos ou amostras e também prestamos serviços de
+          manutenção em moldes em geral, nos enquadrando nas políticas de
+          terceirização/parceria, tanto na manutenção como no desenvolvimento de
+          moldes e modelos. Tradicional fornecedor para indústria auto peças;
+          máquinas operatrizes; ferramentas eletroeletrônicas; têxtil entre
+          outros, oferecemos aos nossos clientes os melhores serviços, com
+          qualidade, atendimento e rapidez no prazo de entrega. Com sede própria
+          e contando com equipamentos de alta tecnologia, podemos executar todos
+          e quaisquer tipos de modelos e moldes. Desenvolvemos todo o processo
+          por aplicativos CAD/CAM.
+        </p>
+      </div>
 
       <div className="flexCenter max-container relative w-full">
         <CarouselComponent data={data} />

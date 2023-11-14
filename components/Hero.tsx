@@ -7,7 +7,7 @@ interface HeroProps {
 }
 const Hero: React.FC<HeroProps> = ({ scrollToCamp }) => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col mb-24 gap-20 py-28 pb-32 md:gap-28 lg:py-32 xl:flex-row">
       <div className="hero-map" />
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
@@ -16,10 +16,10 @@ const Hero: React.FC<HeroProps> = ({ scrollToCamp }) => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "tween", ease: "easeOut", duration: 0.5 }}
         >
-          <h1 className="bold-52 lg:bold-88 xl:max-w-[500px]">
+          <h1 className="bold-52 lg:bold-88 xl:max-w-[500px] text-shadow">
             Tecnologia Em Moldes
           </h1>
-          <p className="regular-16 mt-6 text-gray-10 xl:max-w-[500px]">
+          <p className="regular-16 mt-6 text-gray-10 xl:max-w-[500px] text-shadow">
             Atuamos no ramo de moldes para fundição em madeira, alumínio, aço,
             isopor, araldite, modelo padrão, modelos copiadores, ferramentas
             para injeção de poliestireno expandido, placas para shell-molding,

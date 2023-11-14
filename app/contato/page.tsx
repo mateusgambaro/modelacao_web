@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
   // };
   return (
     <>
-      <section className="bg-green-90 py-10">
+      <section className="bg-green-90 py-32">
         <h1 className="bold-52 sm:bold-88 text-white text-center">Contato</h1>
         <p className="regular-16 text-white text-center mx-auto px-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

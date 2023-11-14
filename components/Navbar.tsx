@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flexBetween max-container bg-whitesmoke padding-container relative z-30 py-5">
+    <nav className="fixed-navbar flexBetween padding-container py-5 ">
       <Link href="/" passHref legacyBehavior>
         <a>
           <Image
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       {/* Links for mobile and desktop */}
       <div
-        className={`absolute bg-white top-full left-0 w-full ${
+        className={`absolute bg-gray-120 rounded-2xl mt-2 top-full left-0 w-full ${
           isNavVisible ? "block" : "hidden"
         } lg:hidden`}
       >
