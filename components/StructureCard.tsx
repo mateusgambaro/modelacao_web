@@ -25,7 +25,7 @@ const StructureCard: React.FC<{
           </div>
 
           <div className="flex flex-1 items-center flex-col">
-            <h1 className="bold-52 lg:bold-88 xl:max-w-[600px]">{title} </h1>
+            <h1 className="bold-52 lg:bold-64 xl:max-w-[600px]">{title} </h1>
             <p className="regular-18 mt-6 text-gray-10 xl:max-w-[500px]">
               {description}
             </p>

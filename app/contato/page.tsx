@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
             <div className="flex flex-col w-[350px] sm:w-[250px] h-[150px] justify-center items-center bg-green-120 rounded-2xl">
               <AiOutlinePhone color="#97D384" size={40} />
               <p className="regular-16 text-green-150 pt-4">(15) 3226-4801</p>
-              <p className="regular-16 text-green-150">(15) 3226-4801</p>
+              <p className="regular-16 text-green-150">(15) 3226-2942</p>
             </div>
             <div className="flex flex-col w-[350px] h-[150px] justify-center items-center bg-green-120 rounded-2xl">
               <AiOutlineMail color="#97D384" size={40} />

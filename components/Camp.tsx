@@ -28,12 +28,12 @@ const data = [
   {
     id: 4,
     title: "Usinagem CNC High Speed",
-    image: "/molde.jpeg",
+    image: "/highspeed.jpeg",
   },
   {
     id: 5,
     title: "Protótipos Funcionais",
-    image: "/molde.jpeg",
+    image: "/prototipos.jpeg",
   },
   {
     id: 6,
@@ -51,9 +51,9 @@ const Camp = () => {
   };
   return (
     <section className="2xl:max-container relative sm:flex-row bg-green-120 flex flex-col py-32 lg:pb-28">
-      <div className="hide-scrollbar flex h-full w-full ml-10 items-start justify-start gap-8 overflow-x-auto ">
+      <div className="hide-scrollbar flex h-full w-full sm:ml-10 items-start justify-start gap-8 overflow-x-auto ">
         <div
-          className={`h-[600px] w-[500px] overflow-x-hidden overflow-y-hidden sm:ml-8 sm:mr-8 sm:rounded-2xl`}
+          className={`h-[600px] w-[500px] pl-4 pr-4 sm:pl-0 sm:pr-0 overflow-x-hidden overflow-y-hidden sm:ml-8 sm:mr-8 sm:rounded-2xl`}
         >
           <CarouselImagesComponent
             data={data}
@@ -62,7 +62,7 @@ const Camp = () => {
         </div>
       </div>
 
-      <div className="flexCenter z-10 top-24 left-0 mt-10 px-6 lg:mt-10 w-full">
+      <div className="flexCenter z-10 sm:top-24 -mt-16 sm:mt-0 left-0 px-6 w-full">
         <div className="bg-green-50 p-8 lg:max-w-[1300px] xl:w-[784px] relative w-full overflow-hidden sm:rounded-l-3xl rounded-3xl">
           <h2 className="regular-24 md:regular-64 capitalize text-white text-center">
             <strong>Soluções Completas</strong>
