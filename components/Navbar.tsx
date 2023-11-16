@@ -22,7 +22,7 @@ const Navbar = () => {
             src="/logo-modelacao.png"
             alt="logo"
             width={200}
-            height={109}
+            height={0}
           />
       </Link>
 
