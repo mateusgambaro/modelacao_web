@@ -17,15 +17,13 @@ const Navbar = () => {
 
   return (
     <nav className="fixed-navbar flexBetween padding-container py-5 ">
-      <Link href="/" passHref legacyBehavior>
-        <a>
+      <Link href="/">
           <Image
             src="/logo-modelacao.png"
             alt="logo"
             width={200}
             height={109}
           />
-        </a>
       </Link>
 
       {/* Mobile Menu Icon */}
