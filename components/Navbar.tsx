@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed-navbar flexBetween padding-container py-5 ">
-      <Link href="/" passHref legacyBehavior>
+      {/* <Link href="/" passHref legacyBehavior>
         <a>
           <Image
             src="/logo-modelacao.png"
@@ -26,7 +26,7 @@ const Navbar = () => {
             height={109}
           />
         </a>
-      </Link>
+      </Link> */}
 
       {/* Mobile Menu Icon */}
       <div className="lg:hidden" onClick={toggleNav}>
