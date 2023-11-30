@@ -45,23 +45,23 @@ const Estrutura: React.FC = () => {
           description="A área de usinagem na Modelação Sorocabana representa a vanguarda da precisão e tecnologia. Equipada com máquinas de última geração, incluindo CNC 05 Eixos, CNC High Speed Machine e CNC Grande Porte (3200 x 2400 x 800), nossa equipe altamente qualificada realiza a usinagem de moldes com uma precisão incomparável. Cada peça é meticulosamente trabalhada para garantir não apenas a perfeição dimensional, mas também a eficiência no processo produtivo. Investimos constantemente em tecnologia para oferecer soluções inovadoras e manter o mais alto padrão de qualidade em nossos produtos."
         />
         <StructureCard
-          image="/engenharia.jpg"
+          image="/fundicao.jpeg"
           title="Fundição"
           description="Na Modelação Sorocabana, a fundição é uma arte dominada pela excelência. Contamos com uma fundição em alumínio especializada em moldes, onde a fusão de experiência e tecnologia resulta em moldes de alta qualidade. Nossos fundidores são especialistas em diversos materiais, incluindo madeira, alumínio, aço, isopor, araldite e outros. Com ferramentais de última geração desenvolvidos especialmente para moldes, garantimos a consistência e a precisão em cada fundição. Nosso compromisso é fornecer soluções completas e confiáveis para atender às demandas específicas de nossos clientes."
         />
         <StructureCard
-          image="/engenharia.jpg"
+          image="/acabamento.jpeg"
           title="Acabamento"
           description="A excelência não termina na moldagem e usinagem; ela se estende até a fase de acabamento na Modelação Sorocabana. Cada detalhe é refinado com maestria, proporcionando não apenas uma estética impecável, mas também funcionalidade superior. Nosso processo de acabamento abrange técnicas especializadas para diferentes materiais, assegurando uma superfície final de alta qualidade em moldes de madeira, alumínio, aço, entre outros. Valorizamos a estética tanto quanto a funcionalidade, garantindo que cada molde atenda não apenas às especificações técnicas, mas também às expectativas visuais e táteis."
         />
         <StructureCard
-          image="/engenharia.jpg"
+          image="/montagem.jpeg"
           title="Montagem"
           description="A montagem na Modelação Sorocabana é a convergência habilidosa de peças individuais em um conjunto coeso e funcional. Com precisão milimétrica, nossa equipe realiza a montagem de moldes, dispositivos e ferramentais, assegurando que cada componente se encaixe perfeitamente. A organização meticulosa e o comprometimento com a excelência são evidentes em cada etapa do processo de montagem. Nossa abordagem minuciosa garante a confiabilidade e durabilidade dos produtos, resultando em soluções completas que superam as expectativas de nossos clientes."
         />
 
         <StructureCard
-          image="/engenharia.jpg"
+          image="/modelacao.jpeg"
           title="Modelação"
           description="Na Modelação Sorocabana, a arte da modelação transcende a simples criação de formas. Contando com um Departamento de Engenharia composto por profissionais altamente capacitados, utilizamos tecnologias de digitalização, engenharia reversa e fabricação de protótipos funcionais em ABS para transformar conceitos em realidade. Nosso sistema de gestão da qualidade assegura que cada projeto atenda aos mais rigorosos padrões internacionais. Somos especialistas na modelação de moldes, dispositivos e peças prototipadas, oferecendo soluções inovadoras e confiáveis para os desafios mais complexos."
         />
