@@ -13,7 +13,7 @@ const data = [
   {
     id: 1,
     title: "Usinagem CNC 5 Eixos",
-    image: "/molde.jpeg",
+    image: "/usinagem5.png",
   },
   {
     id: 2,

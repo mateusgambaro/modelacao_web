@@ -40,7 +40,7 @@ const Estrutura: React.FC = () => {
           reconhecidos."
         />
         <StructureCard
-          image="/engenharia.jpg"
+          image="/usinagem.jpeg"
           title="Usinagem"
           description="A área de usinagem na Modelação Sorocabana representa a vanguarda da precisão e tecnologia. Equipada com máquinas de última geração, incluindo CNC 05 Eixos, CNC High Speed Machine e CNC Grande Porte (3200 x 2400 x 800), nossa equipe altamente qualificada realiza a usinagem de moldes com uma precisão incomparável. Cada peça é meticulosamente trabalhada para garantir não apenas a perfeição dimensional, mas também a eficiência no processo produtivo. Investimos constantemente em tecnologia para oferecer soluções inovadoras e manter o mais alto padrão de qualidade em nossos produtos."
         />
